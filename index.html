@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fenda do Biquíni — Início</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="imagens.css">
+</head>
+<body class="pagina-inicio">
+  <div class="bolhas-bg" aria-hidden="true" id="bolhas"></div>
+
+  <nav class="nav-bikini">
+    <a href="index.html" class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/SpongeBob_SquarePants_logo.svg/120px-SpongeBob_SquarePants_logo.svg.png" alt="" class="logo-img" width="120" height="48">
+      <span class="logo-texto">Fenda do Biquíni</span>
+    </a>
+    <ul>
+      <li><a href="index.html" class="ativo">Início</a></li>
+      <li><a href="personagens.html">Personagens</a></li>
+      <li><a href="episodios.html">Episódios</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main class="conteudo">
+    <section class="hero-fenda">
+      <img
+        class="img-oficial img-hero-bob"
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png"
+        alt="Bob Esponja sorrindo"
+        width="314"
+        height="406"
+      >
+      <h1>Estou pronto! Estou pronto!</h1>
+      <p class="subtitulo">Bem-vindo ao submarino mais animado do oceano — Fenda do Biquíni!</p>
+      <a href="personagens.html" class="btn-bob">Conhecer a turma</a>
+    </section>
+
+    <section class="cards-explorar" aria-label="Explorar o site">
+      <article class="card-fenda">
+        <div class="icone">
+          <img class="icone-img img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/SpongeBob_SquarePants_character_montage.png" alt="Elenco do desenho" width="120" height="102">
+        </div>
+        <h3>Personagens</h3>
+        <p>Bob, Patrick, Lula Molusco e toda a gangue que mora na fenda.</p>
+        <a href="personagens.html" class="btn-bob">Ver perfis</a>
+      </article>
+      <article class="card-fenda">
+        <div class="icone">
+          <img class="icone-img img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/2/25/The_Krusty_Krab.png" alt="Siri Cascudo" width="120" height="92">
+        </div>
+        <h3>Episódios</h3>
+        <p>Os clássicos que fizeram história no Siri Cascudo e além.</p>
+        <a href="episodios.html" class="btn-bob">Assistir lista</a>
+      </article>
+      <article class="card-fenda">
+        <div class="icone">
+          <img class="icone-img img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png" alt="Patrick Estrela" width="80" height="103">
+        </div>
+        <h3>Galeria</h3>
+        <p>Momentos icônicos da vida subaquática em um mosaico colorido.</p>
+        <a href="galeria.html" class="btn-bob">Abrir galeria</a>
+      </article>
+      <article class="card-fenda">
+        <div class="icone">
+          <img class="icone-img img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png" alt="Gary o caracol" width="80" height="91">
+        </div>
+        <h3>Contato</h3>
+        <p>Mande uma mensagem para a turma e teste seu conhecimento!</p>
+        <a href="contato.html" class="btn-bob">Falar conosco</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape-fenda">
+    <p>© 2026 Fenda do Biquíni — Site fan-made. <a href="contato.html">Entre em contato</a></p>
+    <p class="credito-imagens">Imagens: personagens e cenários © Nickelodeon / NickRewind, via <a href="https://commons.wikimedia.org/wiki/Category:SpongeBob_SquarePants" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY 3.0).</p>
+  </footer>
+
+  <script>
+    (function () {
+      const container = document.getElementById('bolhas');
+      for (let i = 0; i < 12; i++) {
+        const b = document.createElement('div');
+        b.className = 'bolha';
+        const size = 8 + Math.random() * 24;
+        b.style.width = size + 'px';
+        b.style.height = size + 'px';
+        b.style.left = Math.random() * 100 + '%';
+        b.style.animationDuration = 6 + Math.random() * 8 + 's';
+        b.style.animationDelay = Math.random() * 5 + 's';
+        container.appendChild(b);
+      }
+    })();
+  </script>
+</body>
+</html>

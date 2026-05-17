@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria — Fenda do Biquíni</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="galeria.css">
+  <link rel="stylesheet" href="imagens.css">
+</head>
+<body class="pagina-galeria">
+  <nav class="nav-bikini">
+    <a href="index.html" class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/SpongeBob_SquarePants_logo.svg/120px-SpongeBob_SquarePants_logo.svg.png" alt="" class="logo-img" width="120" height="48">
+      <span class="logo-texto">Fenda do Biquíni</span>
+    </a>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="personagens.html">Personagens</a></li>
+      <li><a href="episodios.html">Episódios</a></li>
+      <li><a href="galeria.html" class="ativo">Galeria</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header class="titulo-pagina conteudo">
+    <h1>Galeria submarina</h1>
+    <p>Clique em qualquer cena para ver em tamanho maior.</p>
+  </header>
+
+  <main class="mosaico-galeria" id="galeria">
+    <figure class="item-galeria grande" data-titulo="Elenco da Fenda" data-imagem="https://upload.wikimedia.org/wikipedia/commons/b/b2/SpongeBob_SquarePants_character_montage.png">
+      <div class="arte fenda">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/SpongeBob_SquarePants_character_montage.png/960px-SpongeBob_SquarePants_character_montage.png" alt="Elenco oficial do desenho" width="960" height="817" loading="lazy">
+      </div>
+      <figcaption class="legenda">Elenco oficial — Fenda do Biquíni</figcaption>
+    </figure>
+    <figure class="item-galeria" data-titulo="Siri Cascudo" data-imagem="https://upload.wikimedia.org/wikipedia/commons/2/25/The_Krusty_Krab.png">
+      <div class="arte siri">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Krusty_Krab.png/640px-The_Krusty_Krab.png" alt="Restaurante Siri Cascudo" width="640" height="493" loading="lazy">
+      </div>
+      <figcaption class="legenda">O Siri Cascudo</figcaption>
+    </figure>
+    <figure class="item-galeria" data-titulo="Plankton e Karen" data-imagem="https://upload.wikimedia.org/wikipedia/commons/0/0d/SpongeBob-Plankton-and-Karen-float.jpg">
+      <div class="arte krusty">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/SpongeBob-Plankton-and-Karen-float.jpg/640px-SpongeBob-Plankton-and-Karen-float.jpg" alt="Plankton e Karen" width="640" height="514" loading="lazy">
+      </div>
+      <figcaption class="legenda">Plankton — rival do Siri Cascudo</figcaption>
+    </figure>
+    <figure class="item-galeria" data-titulo="Bob Esponja" data-imagem="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png">
+      <div class="arte jellyfish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png" alt="Bob Esponja" width="314" height="406" loading="lazy">
+      </div>
+      <figcaption class="legenda">Bob Esponja</figcaption>
+    </figure>
+    <figure class="item-galeria" data-titulo="Patrick Estrela" data-imagem="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png">
+      <div class="arte bubble">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png" alt="Patrick Estrela" width="378" height="487" loading="lazy">
+      </div>
+      <figcaption class="legenda">Patrick, melhor amigo do Bob</figcaption>
+    </figure>
+    <figure class="item-galeria" data-titulo="Lula Molusco" data-imagem="https://upload.wikimedia.org/wikipedia/commons/e/e1/Squidward_Tentacles_character.png">
+      <div class="arte rock">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Squidward_Tentacles_character.png" alt="Lula Molusco" width="212" height="467" loading="lazy">
+      </div>
+      <figcaption class="legenda">Lula Molusco, o vizinho</figcaption>
+    </figure>
+    <figure class="item-galeria" data-titulo="Sandy Bochechas" data-imagem="https://upload.wikimedia.org/wikipedia/commons/b/bb/Sandy_Cheeks_character.png">
+      <div class="arte boat">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Sandy_Cheeks_character.png" alt="Sandy Bochechas" width="379" height="418" loading="lazy">
+      </div>
+      <figcaption class="legenda">Sandy, cientista do Texas</figcaption>
+    </figure>
+    <figure class="item-galeria grande" data-titulo="Gary" data-imagem="https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png">
+      <div class="arte treasure">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png" alt="Gary o caracol" width="271" height="308" loading="lazy">
+      </div>
+      <figcaption class="legenda">Gary, mascote do Bob</figcaption>
+    </figure>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-titulo">
+    <section class="lightbox-conteudo">
+      <img class="lightbox-img img-oficial" id="lightbox-img" src="" alt="">
+      <h2 id="lightbox-titulo"></h2>
+      <button type="button" class="lightbox-fechar" id="fechar-lightbox">Fechar</button>
+    </section>
+  </div>
+
+  <footer class="rodape-fenda">
+    <p>© 2026 Fenda do Biquíni — <a href="contato.html">Contato</a></p>
+    <p class="credito-imagens">Imagens oficiais © Nickelodeon / NickRewind — <a href="https://commons.wikimedia.org/wiki/Category:SpongeBob_SquarePants" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY 3.0).</p>
+  </footer>
+
+  <script>
+    (function () {
+      const lightbox = document.getElementById('lightbox');
+      const imgEl = document.getElementById('lightbox-img');
+      const tituloEl = document.getElementById('lightbox-titulo');
+      const fecharBtn = document.getElementById('fechar-lightbox');
+
+      document.querySelectorAll('.item-galeria').forEach(function (item) {
+        item.addEventListener('click', function () {
+          imgEl.src = item.getAttribute('data-imagem');
+          imgEl.alt = item.getAttribute('data-titulo');
+          tituloEl.textContent = item.getAttribute('data-titulo');
+          lightbox.classList.add('aberto');
+        });
+      });
+
+      function fechar() {
+        lightbox.classList.remove('aberto');
+      }
+
+      fecharBtn.addEventListener('click', fechar);
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) fechar();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') fechar();
+      });
+    })();
+  </script>
+</body>
+</html>

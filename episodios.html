@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episódios — Fenda do Biquíni</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="episodios.css">
+  <link rel="stylesheet" href="imagens.css">
+</head>
+<body class="pagina-episodios">
+  <nav class="nav-bikini">
+    <a href="index.html" class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/SpongeBob_SquarePants_logo.svg/120px-SpongeBob_SquarePants_logo.svg.png" alt="" class="logo-img" width="120" height="48">
+      <span class="logo-texto">Fenda do Biquíni</span>
+    </a>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="personagens.html">Personagens</a></li>
+      <li><a href="episodios.html" class="ativo">Episódios</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header class="titulo-pagina conteudo">
+    <h1>Episódios clássicos</h1>
+    <p>Linha do tempo dos momentos mais memoráveis. Use os filtros para explorar por temporada.</p>
+  </header>
+
+  <div class="filtros-ep conteudo" role="group" aria-label="Filtrar episódios">
+    <button type="button" class="ativo" data-filtro="todos">Todos</button>
+    <button type="button" data-filtro="1">Temporada 1</button>
+    <button type="button" data-filtro="2">Temporada 2</button>
+    <button type="button" data-filtro="3">Temporada 3</button>
+  </div>
+
+  <main class="conteudo timeline" id="lista-episodios">
+    <article class="episodio-item" data-temporada="1">
+      <div class="episodio-card">
+        <img class="thumb-ep img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/SpongeBob-Plankton-and-Karen-float.jpg/640px-SpongeBob-Plankton-and-Karen-float.jpg" alt="Plankton" width="640" height="514" loading="lazy">
+        <span class="temporada">Temporada 1 · Ep. 1</span>
+        <h3>Busca pela Fórmula Secreta</h3>
+        <p>Plankton tenta pela primeira vez roubar a receita do hambúrguer de siri no Siri Cascudo.</p>
+        <span class="nota">★★★★☆</span>
+      </div>
+    </article>
+    <article class="episodio-item" data-temporada="1">
+      <div class="episodio-card">
+        <img class="thumb-ep img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png" alt="Bob Esponja" width="314" height="406" loading="lazy">
+        <span class="temporada">Temporada 1 · Ep. 7</span>
+        <h3>Águas-Vivas</h3>
+        <p>Bob e Patrick descobrem o hobby de capturar águas-vivas — até exagerarem na diversão.</p>
+        <span class="nota">★★★★★</span>
+      </div>
+    </article>
+    <article class="episodio-item" data-temporada="2">
+      <div class="episodio-card">
+        <img class="thumb-ep img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png" alt="Patrick Estrela" width="378" height="487" loading="lazy">
+        <span class="temporada">Temporada 2 · Ep. 3</span>
+        <h3>Bandeiras de Golfinho</h3>
+        <p>Um jogo de bandeirinha entre Bob e Patrick que dura meses... e meses... e meses.</p>
+        <span class="nota">★★★★★</span>
+      </div>
+    </article>
+    <article class="episodio-item" data-temporada="2">
+      <div class="episodio-card">
+        <img class="thumb-ep img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/2/25/The_Krusty_Krab.png" alt="Siri Cascudo" width="700" height="540" loading="lazy">
+        <span class="temporada">Temporada 2 · Ep. 12</span>
+        <h3>A Noite do Siri Cascudo</h3>
+        <p>Funcionários viram zumbis de hambúrguer em uma noite assustadora no restaurante.</p>
+        <span class="nota">★★★★☆</span>
+      </div>
+    </article>
+    <article class="episodio-item" data-temporada="3">
+      <div class="episodio-card">
+        <img class="thumb-ep img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Squidward_Tentacles_character.png" alt="Lula Molusco" width="212" height="467" loading="lazy">
+        <span class="temporada">Temporada 3 · Ep. 5</span>
+        <h3>Clubes da Esponja</h3>
+        <p>Bob cria clubes secretos que deixam Lula Molusco ainda mais irritado com o barulho.</p>
+        <span class="nota">★★★★☆</span>
+      </div>
+    </article>
+    <article class="episodio-item" data-temporada="3">
+      <div class="episodio-card">
+        <img class="thumb-ep img-oficial" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/SpongeBob_SquarePants_character_montage.png" alt="Elenco do filme" width="635" height="540" loading="lazy">
+        <span class="temporada">Temporada 3 · Ep. 18</span>
+        <h3>O Filme da Esponja</h3>
+        <p>Bob parte em uma aventura épica para recuperar a coroa do Rei Netuno.</p>
+        <span class="nota">★★★★★</span>
+      </div>
+    </article>
+  </main>
+
+  <footer class="rodape-fenda">
+    <p>© 2026 Fenda do Biquíni — <a href="galeria.html">Ver galeria</a></p>
+    <p class="credito-imagens">Imagens oficiais © Nickelodeon / NickRewind — <a href="https://commons.wikimedia.org/wiki/Category:SpongeBob_SquarePants" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY 3.0).</p>
+  </footer>
+
+  <script>
+    (function () {
+      const botoes = document.querySelectorAll('.filtros-ep button');
+      const itens = document.querySelectorAll('.episodio-item');
+
+      botoes.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          botoes.forEach(function (b) { b.classList.remove('ativo'); });
+          btn.classList.add('ativo');
+
+          const filtro = btn.getAttribute('data-filtro');
+          itens.forEach(function (item) {
+            const temp = item.getAttribute('data-temporada');
+            if (filtro === 'todos' || filtro === temp) {
+              item.classList.remove('oculto');
+            } else {
+              item.classList.add('oculto');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

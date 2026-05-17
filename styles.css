@@ -1,0 +1,164 @@
+/* ===== Base compartilhada ===== */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;600&display=swap');
+
+:root {
+  --amarelo-bob: #ffe135;
+  --amarelo-escuro: #f5c800;
+  --azul-oceano: #1a6fb5;
+  --azul-profundo: #0d4a7a;
+  --rosa-patrick: #ff6b9d;
+  --verde-plankton: #4caf50;
+  --branco-espuma: #f0f8ff;
+  --marrom-areia: #e8c872;
+  --sombra: rgba(13, 74, 122, 0.35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  min-height: 100vh;
+  color: #1a3a5c;
+  line-height: 1.6;
+}
+
+/* Navegação global */
+.nav-bikini {
+  background: linear-gradient(180deg, var(--azul-oceano) 0%, var(--azul-profundo) 100%);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 4px 12px var(--sombra);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-bikini .logo {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--amarelo-bob);
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--azul-profundo);
+}
+
+.nav-bikini ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.nav-bikini a {
+  color: var(--branco-espuma);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.35rem 0.6rem;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-bikini a:hover,
+.nav-bikini a.ativo {
+  background: var(--amarelo-bob);
+  color: var(--azul-profundo);
+}
+
+footer.rodape-fenda {
+  background: var(--azul-profundo);
+  color: var(--branco-espuma);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+footer.rodape-fenda a {
+  color: var(--amarelo-bob);
+}
+
+footer .credito-imagens {
+  font-size: 0.75rem;
+  opacity: 0.85;
+  margin-top: 0.5rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Bolhas decorativas */
+.bolhas-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bolha {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  animation: subir-bolha linear infinite;
+}
+
+@keyframes subir-bolha {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-20vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Utilitários */
+.conteudo {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.btn-bob {
+  display: inline-block;
+  background: var(--amarelo-bob);
+  color: var(--azul-profundo);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border: 3px solid var(--azul-profundo);
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 0 var(--azul-profundo);
+}
+
+.btn-bob:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--azul-profundo);
+}
+
+.btn-bob:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--azul-profundo);
+}

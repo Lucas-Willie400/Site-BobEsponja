@@ -1,0 +1,159 @@
+/* Página Contato — formulário interativo */
+body.pagina-contato {
+  background: linear-gradient(160deg, var(--rosa-patrick) 0%, #ff4081 30%, var(--azul-oceano) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-contato .titulo-pagina h1 {
+  color: white;
+  text-shadow: 2px 2px 0 var(--azul-profundo);
+}
+
+.pagina-contato .titulo-pagina p {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.layout-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .layout-contato {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formulario-bob {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 12px 32px var(--sombra);
+  border: 4px solid var(--amarelo-bob);
+}
+
+.formulario-bob label {
+  display: block;
+  font-weight: 600;
+  color: var(--azul-profundo);
+  margin-bottom: 0.35rem;
+  margin-top: 1rem;
+}
+
+.formulario-bob label:first-of-type {
+  margin-top: 0;
+}
+
+.formulario-bob input,
+.formulario-bob select,
+.formulario-bob textarea {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.formulario-bob input:focus,
+.formulario-bob select:focus,
+.formulario-bob textarea:focus {
+  outline: none;
+  border-color: var(--azul-oceano);
+}
+
+.formulario-bob input.erro,
+.formulario-bob textarea.erro {
+  border-color: #e53935;
+  background: #ffebee;
+}
+
+.mensagem-erro {
+  color: #c62828;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.mensagem-erro.visivel {
+  display: block;
+}
+
+.painel-lateral {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.contador-caracteres {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+.contador-caracteres.alerta {
+  color: #e65100;
+  font-weight: 600;
+}
+
+#mensagem-sucesso {
+  display: none;
+  background: #e8f5e9;
+  border: 2px solid var(--verde-plankton);
+  color: #2e7d32;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+#mensagem-sucesso.visivel {
+  display: block;
+}
+
+.quiz-rapido {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+.quiz-rapido h3 {
+  margin-bottom: 1rem;
+}
+
+.opcoes-quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.opcoes-quiz button {
+  background: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--azul-profundo);
+  transition: background 0.2s;
+}
+
+.opcoes-quiz button:hover {
+  background: var(--amarelo-bob);
+}
+
+#resultado-quiz {
+  margin-top: 1rem;
+  font-weight: 600;
+  min-height: 1.5em;
+}
