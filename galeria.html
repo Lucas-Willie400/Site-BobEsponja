@@ -1,125 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria — Fenda do Biquíni</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="galeria.css">
-  <link rel="stylesheet" href="imagens.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria — Fenda do Biquíni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="imagens.css">
 </head>
+
 <body class="pagina-galeria">
-  <nav class="nav-bikini">
-    <a href="index.html" class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/SpongeBob_SquarePants_logo.svg/120px-SpongeBob_SquarePants_logo.svg.png" alt="" class="logo-img" width="120" height="48">
-      <span class="logo-texto">Fenda do Biquíni</span>
-    </a>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="personagens.html">Personagens</a></li>
-      <li><a href="episodios.html">Episódios</a></li>
-      <li><a href="galeria.html" class="ativo">Galeria</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-  </nav>
+    <nav class="nav-bikini">
+        <a href="index.html" class="logo">
+            <img src="data:image/jpeg;base64,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"
+                alt="" class="logo-img" width="120" height="48">
+            <span class="logo-texto">Fenda do Biquíni</span>
+        </a>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="personagens.html">Personagens</a></li>
+            <li><a href="episodios.html">Episódios</a></li>
+            <li><a href="galeria.html" class="ativo">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-  <header class="titulo-pagina conteudo">
-    <h1>Galeria submarina</h1>
-    <p>Clique em qualquer cena para ver em tamanho maior.</p>
-  </header>
+    <header class="titulo-pagina conteudo">
+        <h1>Galeria submarina</h1>
+        <p>Clique em qualquer cena para ver em tamanho maior.</p>
+    </header>
 
-  <main class="mosaico-galeria" id="galeria">
-    <figure class="item-galeria grande" data-titulo="Elenco da Fenda" data-imagem="https://upload.wikimedia.org/wikipedia/commons/b/b2/SpongeBob_SquarePants_character_montage.png">
-      <div class="arte fenda">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/SpongeBob_SquarePants_character_montage.png/960px-SpongeBob_SquarePants_character_montage.png" alt="Elenco oficial do desenho" width="960" height="817" loading="lazy">
-      </div>
-      <figcaption class="legenda">Elenco oficial — Fenda do Biquíni</figcaption>
-    </figure>
-    <figure class="item-galeria" data-titulo="Siri Cascudo" data-imagem="https://upload.wikimedia.org/wikipedia/commons/2/25/The_Krusty_Krab.png">
-      <div class="arte siri">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Krusty_Krab.png/640px-The_Krusty_Krab.png" alt="Restaurante Siri Cascudo" width="640" height="493" loading="lazy">
-      </div>
-      <figcaption class="legenda">O Siri Cascudo</figcaption>
-    </figure>
-    <figure class="item-galeria" data-titulo="Plankton e Karen" data-imagem="https://upload.wikimedia.org/wikipedia/commons/0/0d/SpongeBob-Plankton-and-Karen-float.jpg">
-      <div class="arte krusty">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/SpongeBob-Plankton-and-Karen-float.jpg/640px-SpongeBob-Plankton-and-Karen-float.jpg" alt="Plankton e Karen" width="640" height="514" loading="lazy">
-      </div>
-      <figcaption class="legenda">Plankton — rival do Siri Cascudo</figcaption>
-    </figure>
-    <figure class="item-galeria" data-titulo="Bob Esponja" data-imagem="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png">
-      <div class="arte jellyfish">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png" alt="Bob Esponja" width="314" height="406" loading="lazy">
-      </div>
-      <figcaption class="legenda">Bob Esponja</figcaption>
-    </figure>
-    <figure class="item-galeria" data-titulo="Patrick Estrela" data-imagem="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png">
-      <div class="arte bubble">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png" alt="Patrick Estrela" width="378" height="487" loading="lazy">
-      </div>
-      <figcaption class="legenda">Patrick, melhor amigo do Bob</figcaption>
-    </figure>
-    <figure class="item-galeria" data-titulo="Lula Molusco" data-imagem="https://upload.wikimedia.org/wikipedia/commons/e/e1/Squidward_Tentacles_character.png">
-      <div class="arte rock">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Squidward_Tentacles_character.png" alt="Lula Molusco" width="212" height="467" loading="lazy">
-      </div>
-      <figcaption class="legenda">Lula Molusco, o vizinho</figcaption>
-    </figure>
-    <figure class="item-galeria" data-titulo="Sandy Bochechas" data-imagem="https://upload.wikimedia.org/wikipedia/commons/b/bb/Sandy_Cheeks_character.png">
-      <div class="arte boat">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Sandy_Cheeks_character.png" alt="Sandy Bochechas" width="379" height="418" loading="lazy">
-      </div>
-      <figcaption class="legenda">Sandy, cientista do Texas</figcaption>
-    </figure>
-    <figure class="item-galeria grande" data-titulo="Gary" data-imagem="https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png">
-      <div class="arte treasure">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png" alt="Gary o caracol" width="271" height="308" loading="lazy">
-      </div>
-      <figcaption class="legenda">Gary, mascote do Bob</figcaption>
-    </figure>
-  </main>
+    <main class="mosaico-galeria" id="galeria">
+        <figure class="item-galeria grande" data-titulo="Elenco da Fenda"
+            data-imagem="https://upload.wikimedia.org/wikipedia/commons/b/b2/SpongeBob_SquarePants_character_montage.png">
+            <div class="arte fenda">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/SpongeBob_SquarePants_character_montage.png/960px-SpongeBob_SquarePants_character_montage.png"
+                    alt="Elenco oficial do desenho" width="960" height="817" loading="lazy">
+            </div>
+            <figcaption class="legenda">Elenco oficial — Fenda do Biquíni</figcaption>
+        </figure>
+        <figure class="item-galeria" data-titulo="Siri Cascudo"
+            data-imagem="https://upload.wikimedia.org/wikipedia/commons/2/25/The_Krusty_Krab.png">
+            <div class="arte siri">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/The_Krusty_Krab.png"
+                    alt="Restaurante Siri Cascudo" width="640" height="493" loading="lazy">
+            </div>
+            <figcaption class="legenda">O Siri Cascudo</figcaption>
+        </figure>
+        <figure class="item-galeria" data-titulo="Plankton e Karen"
+            data-imagem="https://upload.wikimedia.org/wikipedia/commons/0/0d/SpongeBob-Plankton-and-Karen-float.jpg">
+            <div class="arte krusty">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Plankton e Karen" width="640" height="514" loading="lazy">
+            </div>
+            <figcaption class="legenda">Plankton — rival do Siri Cascudo</figcaption>
+        </figure>
+        <figure class="item-galeria" data-titulo="Bob Esponja"
+            data-imagem="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png">
+            <div class="arte jellyfish">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png"
+                    alt="Bob Esponja" width="314" height="406" loading="lazy">
+            </div>
+            <figcaption class="legenda">Bob Esponja</figcaption>
+        </figure>
+        <figure class="item-galeria" data-titulo="Patrick Estrela"
+            data-imagem="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png">
+            <div class="arte bubble">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png"
+                    alt="Patrick Estrela" width="378" height="487" loading="lazy">
+            </div>
+            <figcaption class="legenda">Patrick, melhor amigo do Bob</figcaption>
+        </figure>
+        <figure class="item-galeria" data-titulo="Lula Molusco"
+            data-imagem="https://upload.wikimedia.org/wikipedia/commons/e/e1/Squidward_Tentacles_character.png">
+            <div class="arte rock">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Squidward_Tentacles_character.png"
+                    alt="Lula Molusco" width="212" height="467" loading="lazy">
+            </div>
+            <figcaption class="legenda">Lula Molusco, o vizinho</figcaption>
+        </figure>
+        <figure class="item-galeria" data-titulo="Sandy Bochechas"
+            data-imagem="https://upload.wikimedia.org/wikipedia/commons/b/bb/Sandy_Cheeks_character.png">
+            <div class="arte boat">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Sandy_Cheeks_character.png"
+                    alt="Sandy Bochechas" width="379" height="418" loading="lazy">
+            </div>
+            <figcaption class="legenda">Sandy, cientista do Texas</figcaption>
+        </figure>
+        <figure class="item-galeria grande" data-titulo="Gary"
+            data-imagem="https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png">
+            <div class="arte treasure">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Gary_%28SpongeBob%29_character.png"
+                    alt="Gary o caracol" width="271" height="308" loading="lazy">
+            </div>
+            <figcaption class="legenda">Gary, mascote do Bob</figcaption>
+        </figure>
+    </main>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-titulo">
-    <section class="lightbox-conteudo">
-      <img class="lightbox-img img-oficial" id="lightbox-img" src="" alt="">
-      <h2 id="lightbox-titulo"></h2>
-      <button type="button" class="lightbox-fechar" id="fechar-lightbox">Fechar</button>
-    </section>
-  </div>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-titulo">
+        <section class="lightbox-conteudo">
+            <img class="lightbox-img img-oficial" id="lightbox-img" src="" alt="">
+            <h2 id="lightbox-titulo"></h2>
+            <button type="button" class="lightbox-fechar" id="fechar-lightbox">Fechar</button>
+        </section>
+    </div>
 
-  <footer class="rodape-fenda">
-    <p>© 2026 Fenda do Biquíni — <a href="contato.html">Contato</a></p>
-    <p class="credito-imagens">Imagens oficiais © Nickelodeon / NickRewind — <a href="https://commons.wikimedia.org/wiki/Category:SpongeBob_SquarePants" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY 3.0).</p>
-  </footer>
+    <footer class="rodape-fenda">
+        <p>© 2026 Fenda do Biquíni — <a href="contato.html">Contato</a></p>
+        <p class="credito-imagens">Imagens oficiais © Nickelodeon / NickRewind — <a
+                href="https://commons.wikimedia.org/wiki/Category:SpongeBob_SquarePants" target="_blank"
+                rel="noopener">Wikimedia Commons</a> (CC BY 3.0).</p>
+    </footer>
 
-  <script>
-    (function () {
-      const lightbox = document.getElementById('lightbox');
-      const imgEl = document.getElementById('lightbox-img');
-      const tituloEl = document.getElementById('lightbox-titulo');
-      const fecharBtn = document.getElementById('fechar-lightbox');
+    <script>
+        (function () {
+            const lightbox = document.getElementById('lightbox');
+            const imgEl = document.getElementById('lightbox-img');
+            const tituloEl = document.getElementById('lightbox-titulo');
+            const fecharBtn = document.getElementById('fechar-lightbox');
 
-      document.querySelectorAll('.item-galeria').forEach(function (item) {
-        item.addEventListener('click', function () {
-          imgEl.src = item.getAttribute('data-imagem');
-          imgEl.alt = item.getAttribute('data-titulo');
-          tituloEl.textContent = item.getAttribute('data-titulo');
-          lightbox.classList.add('aberto');
-        });
-      });
+            document.querySelectorAll('.item-galeria').forEach(function (item) {
+                item.addEventListener('click', function () {
+                    imgEl.src = item.getAttribute('data-imagem');
+                    imgEl.alt = item.getAttribute('data-titulo');
+                    tituloEl.textContent = item.getAttribute('data-titulo');
+                    lightbox.classList.add('aberto');
+                });
+            });
 
-      function fechar() {
-        lightbox.classList.remove('aberto');
-      }
+            function fechar() {
+                lightbox.classList.remove('aberto');
+            }
 
-      fecharBtn.addEventListener('click', fechar);
-      lightbox.addEventListener('click', function (e) {
-        if (e.target === lightbox) fechar();
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') fechar();
-      });
-    })();
-  </script>
+            fecharBtn.addEventListener('click', fechar);
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) fechar();
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') fechar();
+            });
+        })();
+    </script>
 </body>
+
 </html>

@@ -1,114 +1,114 @@
 /* Página Episódios — timeline vertical */
 body.pagina-episodios {
-  background: linear-gradient(135deg, #1a1a2e 0%, var(--azul-profundo) 50%, #16213e 100%);
-  display: flex;
-  flex-direction: column;
-  color: var(--branco-espuma);
+    background: linear-gradient(135deg, #1a1a2e 0%, var(--azul-profundo) 50%, #16213e 100%);
+    display: flex;
+    flex-direction: column;
+    color: var(--branco-espuma);
 }
 
 .pagina-episodios .titulo-pagina h1 {
-  color: var(--amarelo-bob);
+    color: var(--amarelo-bob);
 }
 
 .pagina-episodios .titulo-pagina p {
-  color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .timeline {
-  position: relative;
-  padding: 1rem 0 3rem 2rem;
-  max-width: 700px;
-  margin: 0 auto;
+    position: relative;
+    padding: 1rem 0 3rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .timeline::before {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: var(--amarelo-bob);
-  border-radius: 4px;
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--amarelo-bob);
+    border-radius: 4px;
 }
 
 .episodio-item {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-left: 2rem;
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
 }
 
 .episodio-item::before {
-  content: '';
-  position: absolute;
-  left: -1.35rem;
-  top: 0.5rem;
-  width: 18px;
-  height: 18px;
-  background: var(--rosa-patrick);
-  border: 3px solid var(--amarelo-bob);
-  border-radius: 50%;
+    content: '';
+    position: absolute;
+    left: -1.35rem;
+    top: 0.5rem;
+    width: 18px;
+    height: 18px;
+    background: var(--rosa-patrick);
+    border: 3px solid var(--amarelo-bob);
+    border-radius: 50%;
 }
 
 .episodio-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 225, 53, 0.3);
-  border-radius: 12px;
-  padding: 1.25rem;
-  backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 225, 53, 0.3);
+    border-radius: 12px;
+    padding: 1.25rem;
+    backdrop-filter: blur(4px);
 }
 
 .episodio-card .temporada {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--amarelo-bob);
-  margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--amarelo-bob);
+    margin-bottom: 0.25rem;
 }
 
 .episodio-card h3 {
-  font-family: 'Baloo 2', cursive;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .episodio-card p {
-  font-size: 0.95rem;
-  opacity: 0.9;
+    font-size: 0.95rem;
+    opacity: 0.9;
 }
 
 .episodio-card .nota {
-  margin-top: 0.75rem;
-  color: var(--amarelo-bob);
-  font-weight: 600;
+    margin-top: 0.75rem;
+    color: var(--amarelo-bob);
+    font-weight: 600;
 }
 
 .filtros-ep {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .filtros-ep button {
-  background: transparent;
-  border: 2px solid var(--amarelo-bob);
-  color: var(--amarelo-bob);
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 600;
-  transition: all 0.2s;
+    background: transparent;
+    border: 2px solid var(--amarelo-bob);
+    color: var(--amarelo-bob);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    transition: all 0.2s;
 }
 
 .filtros-ep button.ativo,
 .filtros-ep button:hover {
-  background: var(--amarelo-bob);
-  color: var(--azul-profundo);
+    background: var(--amarelo-bob);
+    color: var(--azul-profundo);
 }
 
 .episodio-item.oculto {
-  display: none;
+    display: none;
 }
